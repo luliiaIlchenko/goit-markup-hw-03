@@ -20,7 +20,19 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aquamarine;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -30,6 +42,9 @@ body {
 }
 
 /*Header*/
+
+.page-header {
+}
 
 .site-nav .link {
   color: var(--primary-title-color);
@@ -73,34 +88,58 @@ body {
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /*Hero*/
 .hero-title {
-  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #757575; /*чтобы белый текст был виден*/
+  /*background-color: #757575; /*чтобы белый текст был виден*/
 }
+
+.hero {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
 .button {
-  font-family: inherit; /*почему не работает?*/
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  /*font-family: inherit;*/
   color: var(--button-text-color);
   background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 /*Sections*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-title-color);
   font-weight: 700;
   font-size: 36px;
@@ -109,6 +148,9 @@ body {
 }
 
 .worker-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-title-color);
   font-size: 16px;
   line-height: 1.1;
@@ -117,6 +159,9 @@ body {
 }
 
 .worker-job /*подумать над названием класа*/ {
+  margin-top: 0;
+  /*margin-bottom: сделаю когда будут иконки;*/
+
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
@@ -124,6 +169,7 @@ body {
 }
 
 .advantages-title {
+  margin-bottom: 10px;
   color: var(--primary-title-color);
   font-weight: 700;
   font-size: 14px;
@@ -133,19 +179,30 @@ body {
 }
 
 .text {
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
 .work-title {
-  color: #ffffff;
+  margin-bottom: 0;
+  color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
   font-size: 14px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.worker-card {
+  text-align: center;
+}
+
+/*Photos*/
+.photo {
+  margin-bottom: 30px;
 }
 
 /*Footer*/
@@ -172,7 +229,7 @@ body {
 
 .address {
   font-style: normal;
-  color: #ffffff;
+  color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
