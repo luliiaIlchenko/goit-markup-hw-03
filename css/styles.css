@@ -27,6 +27,8 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-left: 200px;
+  padding-right: 200px;
   background-color: aquamarine;
 }
 
@@ -145,6 +147,7 @@ body {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .worker-name {
