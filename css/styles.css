@@ -43,7 +43,7 @@ img {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: rgb(247, 240, 243);
+  /*background-color: rgb(247, 240, 243);*/
 }
 
 .list {
@@ -307,9 +307,15 @@ img {
 }
 
 /*Footer*/
-/*.footer {
+
+.footer {
   background-color: var(--footer-bg-color);
-}*/
+}
+.footer-position {
+  /*подумать над названием*/
+  display: flex;
+  align-items: center;
+}
 
 .footer-contacts {
   font-style: normal;
@@ -319,15 +325,21 @@ img {
   letter-spacing: 0.03em;
 }
 
+.join-us {
+  width: calc((100% - 30px) / 12 * 4);
+}
+
 .footer-socials {
   display: flex;
 }
 
-.address {
-  width: calc((100% - 30px) / 12 * 4);
+.footer-socials .item {
+  margin-right: 10px;
 }
 
 .label {
+  margin-bottom: 21px;
+
   color: var(--button-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -337,6 +349,10 @@ img {
 }
 
 .address {
+  padding-top: 48px;
+  margin-right: 30px;
+  width: calc((100% - 30px) / 12 * 4);
+
   font-style: normal;
   color: var(--primary-white-color);
   font-size: 14px;
@@ -387,6 +403,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .portfolio-card {
   width: 380px;
 }
