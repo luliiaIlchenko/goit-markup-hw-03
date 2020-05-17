@@ -197,18 +197,26 @@ img {
   padding-bottom: 94px;
 }
 
-/*our advantages*/
-.advantages .item:not(:last-child) {
+/*Our advantages*/
+.advantages .item {
   width: calc((100% - 30px) / 12) * 3;
+}
+
+.advantages .item:not(:last-child) {
   margin-right: 30px;
 }
-.advantages {
-  display: flex;
 
-  justify-content: space-between;
-}
+/*Our services*/
 .services {
   display: flex;
+}
+
+.services .item {
+  width: calc((100% - 30px) / 12 * 4);
+}
+
+.services .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
@@ -247,7 +255,6 @@ img {
 
 .advantages {
   display: flex;
-  justify-content: space-between;
 }
 
 .text {
