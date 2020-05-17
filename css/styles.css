@@ -7,6 +7,16 @@
 
 /*General*/
 
+/*html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}*/
+
 :root {
   --primary-text-color: #757575;
   --primary-title-color: #212121;
@@ -21,15 +31,21 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 200px;
-  padding-right: 200px;
-  background-color: aquamarine;
+  /*padding-top: 94px;
+  padding-bottom: 94px;*/
+  background-color: rgb(247, 240, 243);
 }
 
 .list {
@@ -44,11 +60,25 @@ body {
 }
 
 /*Header*/
+.header-menu {
+  display: flex;
+  align-items: center;
+}
 
-.page-header {
+.site-nav {
+  display: flex;
+  margin-left: 86px; /*не работает*/
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-title-color);
   font-weight: 500;
   font-size: 14px;
@@ -64,6 +94,22 @@ body {
 .clients.link:hover,
 .clients.link:focus {
   color: var(--accent-color);
+}
+
+/*Contacts*/
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .link {
@@ -133,10 +179,6 @@ body {
 }
 
 /*Sections*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .section-title {
   margin-top: 0;
@@ -150,6 +192,28 @@ body {
   text-align: center;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*our advantages*/
+.advantages .item:not(:last-child) {
+  width: calc((100% - 30px) / 12) * 3;
+  margin-right: 30px;
+}
+.advantages {
+  display: flex;
+
+  justify-content: space-between;
+}
+.services {
+  display: flex;
+}
+
+.team {
+  display: flex;
+}
 .worker-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -179,6 +243,11 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
 }
 
 .text {
