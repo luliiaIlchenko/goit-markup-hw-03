@@ -265,6 +265,7 @@ img {
 }
 .work-title {
   margin-bottom: 0;
+
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
   font-size: 14px;
@@ -296,6 +297,7 @@ img {
 
 .text {
   margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
