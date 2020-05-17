@@ -254,9 +254,20 @@ img {
   justify-content: space-around;
 }
 
-.gh {
-  padding-bottom: 30px;
+/*Our clients*/
+.clients {
+  display: flex;
 }
+
+.clients .item {
+  /*margin-right: 30px;*/
+  width: calc((100% - 30px) / 12) * 2;
+}
+
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   margin-bottom: 10px;
   color: var(--primary-title-color);
