@@ -219,6 +219,11 @@ img {
   margin-right: 30px;
 }
 
+/*Our team*/
+.team .worker-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team {
   display: flex;
 }
@@ -235,7 +240,7 @@ img {
 
 .worker-job /*подумать над названием класа*/ {
   margin-top: 0;
-  /*margin-bottom: сделаю когда будут иконки;*/
+  margin-bottom: 29px;
 
   font-size: 16px;
   line-height: 1.1;
@@ -243,6 +248,15 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* Team socials*/
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gh {
+  padding-bottom: 30px;
+}
 .advantages-title {
   margin-bottom: 10px;
   color: var(--primary-title-color);
