@@ -43,8 +43,6 @@ img {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  /*padding-top: 94px;
-  padding-bottom: 94px;*/
   background-color: rgb(247, 240, 243);
 }
 
@@ -198,6 +196,21 @@ img {
 }
 
 /*Our advantages*/
+.advantages {
+  display: flex;
+}
+
+.advantages-title {
+  margin-bottom: 10px;
+
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .advantages .item {
   width: calc((100% - 30px) / 12) * 3;
 }
@@ -227,6 +240,9 @@ img {
 .team {
   display: flex;
 }
+.worker-card {
+  text-align: center;
+}
 .worker-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -246,6 +262,16 @@ img {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.work-title {
+  margin-bottom: 0;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* Team socials*/
@@ -268,40 +294,11 @@ img {
   margin-right: 30px;
 }
 
-.advantages-title {
-  margin-bottom: 10px;
-  color: var(--primary-title-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.advantages {
-  display: flex;
-}
-
 .text {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-
-.work-title {
-  margin-bottom: 0;
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
-  font-size: 14px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.worker-card {
-  text-align: center;
 }
 
 /*Photos*/
@@ -310,9 +307,9 @@ img {
 }
 
 /*Footer*/
-.footer {
+/*.footer {
   background-color: var(--footer-bg-color);
-}
+}*/
 
 .footer-contacts {
   font-style: normal;
@@ -320,6 +317,14 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.address {
+  width: calc((100% - 30px) / 12 * 4);
 }
 
 .label {
@@ -352,6 +357,15 @@ img {
 .portfolio .link {
   color: var(--primary-title-color);
 }
+/*Filter*/
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-right: 8px;
+}
+.filter.list {
+  margin-bottom: 50px;
+}
 
 .portfolio .filter {
   font-family: inherit;
@@ -366,6 +380,22 @@ img {
 .portfolio .filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio-card {
+  width: 380px;
+}
+
+.portfolio-description {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio-item {
