@@ -27,8 +27,8 @@
   --copyright-color: rgba(255, 255, 255, 0.4);
 }
 body {
-  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
 
 img {
@@ -212,7 +212,7 @@ img {
 }
 
 .advantages .item {
-  width: calc((100% - 30px) / 12) * 3;
+  width: calc((100% - 30px) / 12) * 3);
 }
 
 .advantages .item:not(:last-child) {
@@ -233,16 +233,27 @@ img {
 }
 
 /*Our team*/
-.team .worker-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team {
   display: flex;
 }
+
 .worker-card {
-  text-align: center;
+  width: calc((100% / 12) * 3);
+ 
 }
+
+.worker-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.worker-info {
+padding-top: 30px;
+ padding-bottom:37px ;
+ padding-right: 36px;
+ padding-left: 44px;
+ 
+ text-align: center;}
+
 .worker-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -254,7 +265,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.worker-job /*подумать над названием класа*/ {
+.worker-profession {
   margin-top: 0;
   margin-bottom: 29px;
 
@@ -264,7 +275,7 @@ img {
   letter-spacing: 0.03em;
 }
 .work-title {
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
@@ -304,9 +315,6 @@ img {
 }
 
 /*Photos*/
-.photo {
-  margin-bottom: 30px;
-}
 
 /*Footer*/
 
