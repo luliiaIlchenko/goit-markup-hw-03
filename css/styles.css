@@ -106,9 +106,9 @@ img {
 }
 
 .contacts .link {
-  display: block;
+  /*display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 32px;*/
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -224,8 +224,12 @@ img {
   display: flex;
 }
 
-.services .item {
+/*.services .item {
   width: calc((100% - 330px) / 12 * 4 + 90px);
+}*/
+
+.servises > .item {
+  width: calc((100% - 60px) / 3);
 }
 
 .services .item:not(:last-child) {
@@ -233,6 +237,8 @@ img {
 }
 
 .service-title {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
   color: var(--primary-white-color);
@@ -387,6 +393,7 @@ img {
 
 .copyright {
   margin-top: 0;
+  margin-bottom: 0;
   padding-top: 18px;
   padding-bottom: 21px;
 
