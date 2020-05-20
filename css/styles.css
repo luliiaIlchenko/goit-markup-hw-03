@@ -413,10 +413,11 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-right: 8px;
-}
-.filter.list {
   margin-bottom: 50px;
+}
+
+.filter .item {
+  margin-right: 8px;
 }
 
 .portfolio .filter {
@@ -434,6 +435,7 @@ img {
   background-color: var(--accent-color);
 }
 
+/*Portfolio*/
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -441,7 +443,13 @@ img {
 }
 
 .portfolio-card {
-  width: 380px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-description {
@@ -452,6 +460,8 @@ img {
 }
 
 .portfolio-item {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -459,6 +469,8 @@ img {
 }
 
 .portfolio-type {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
